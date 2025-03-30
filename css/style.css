@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  /* Main column */
+  main {
+    background-color: #dd2020;
+    justify-items: center;
+  }
+
+  .slider {
+    display: flex;
+    padding: 16px;
+    margin: 32px;
+    position: relative;
+    max-width: 50%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    object-fit: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  
+
+  .pizza {
+    color: #dd2020;
+    padding: 16px;
+    width: 100%;
+    background-image: url(/img/bg-black-dots.avif);
+    justify-self: center;
+    justify-items: center;
+}
+
+  .pizza-cards {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 2rem;
+    justify-items: center;
+}
+
+.pizza-card {
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.pizza-card:hover {
+    display: inline-block;
+    border: 3px solid #0d0c0c;
+    box-shadow: 0px 0px 20px #dd2020;
+    justify-items: center;
+    align-items: center;
+}
+
+.pizza-img {
+  display: flex;
+  justify-content: center;
+}
+
+.pizza-img img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pizza-name {
+  justify-items: center;
+  color:#e5e5e5;
+}
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    
+  }
