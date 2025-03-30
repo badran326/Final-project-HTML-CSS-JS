@@ -16,8 +16,7 @@
 
   .slider {
     display: flex;
-    padding: 16px;
-    margin: 32px;
+    padding: 5%;
     position: relative;
     max-width: 50%;
     height: 400px;
@@ -47,8 +46,9 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 1%;
     cursor: pointer;
+    width: 5%;
   }
   
   .prev { left: 10px; }
@@ -76,27 +76,25 @@
     display: inline-block;
     justify-items: center;
     align-items: center;
-    width: 100%;
+    width: 41%;
     height: fit-content;
     flex-wrap: wrap;
 }
 
-.pizza-card:hover {
-    display: inline-block;
-    border: 3px solid #0d0c0c;
-    box-shadow: 0px 0px 20px #dd2020;
-    justify-items: center;
-    align-items: center;
+.pizza-img:hover {
+  border: 3px solid #0d0c0c;
+  box-shadow: 0px 0px 20px #dd2020;
 }
 
 .pizza-img {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .pizza-img img {
   position: relative;
-  width: 100%;
+  width: 250%;
   object-fit: cover;
 }
 
@@ -115,10 +113,83 @@
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
+    .slider {
+      padding: 3%;
+      max-width: 50%;
+      height: 250px;
+    }
     
+    .slide {
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 100%;
+    }
+    
+    button {
+      padding: 1%;
+      width: 5%;
+    }
+    
+  
+    .pizza {
+      padding: 16px;
+      width: 100%;
+  }
+  
+    .pizza-cards {
+      grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+      gap: 2rem;
+  }
+  
+  .pizza-card {
+      width: 50%;
+    }
+  
+  .pizza-img img {
+    width: 250%;
+  }
   }
   
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
-    
+
+  .slider {
+    padding: 3%;
+    max-width: 50%;
+    height: 150px;
+  }
+  
+  .slide {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+  
+  button {
+    padding: 3%;
+    width: 10%;
+  }
+
+  .prev { left: 1%; }
+  .next { right: 1%; }
+  
+
+  .pizza {
+    padding: 16px;
+    width: 100%;
+}
+
+  .pizza-cards {
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    gap: 1rem;
+}
+
+.pizza-card {
+    width: 50%;
+  }
+
+.pizza-img img {
+  width: 250%;
+}
+
   }
