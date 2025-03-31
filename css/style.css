@@ -16,16 +16,14 @@
 
   .slider {
     display: flex;
-    padding: 5%;
     position: relative;
-    max-width: 50%;
+    max-width: 35%;
     height: 400px;
     overflow: hidden;
   }
   
   .slides {
     display: flex;
-    width: fit-content;
     justify-items: center;
     align-items: center;
     justify-content: space-between;
@@ -34,8 +32,6 @@
   
   .slide {
     object-fit: cover;
-    padding-left: 10%;
-    padding-right: 10%;
     width: 100%;
   }
   
@@ -51,8 +47,8 @@
     width: 5%;
   }
   
-  .prev { left: 10px; }
-  .next { right: 10px; }
+  .prev { left: 2%; }
+  .next { right: 2%; }
   
 
   .pizza {
@@ -101,16 +97,10 @@
 .pizza-name {
   justify-items: center;
   color:#e5e5e5;
+  width: 100%;
+  font-size: 60%;
 }
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  
+ 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
     .slider {
@@ -170,8 +160,8 @@
     width: 10%;
   }
 
-  .prev { left: 1%; }
-  .next { right: 1%; }
+  .prev { left: 0%; }
+  .next { right: 0%; }
   
 
   .pizza {
