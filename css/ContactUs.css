@@ -5,12 +5,6 @@
     --nes-gray: #7B7B7B;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -19,7 +13,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 2rem 4rem; /* Uniform page spacing */
 }
 
 .container {
@@ -29,88 +22,6 @@ body {
     flex: 1;
 }
 
-/* Header/Footer Spacing */
-.global-header {
-    background: var(--nes-black);
-    padding: 1.5rem 4rem;
-    border-bottom: 3px solid var(--nes-red);
-}
-
-.global-footer {
-    background: var(--nes-black);
-    color: var(--nes-white);
-    text-align: center;
-    padding: 2rem 4rem;
-    margin-top: auto;
-}
-
-/* Section Spacing */
-section {
-    padding: 2rem 0;
-    margin: 2rem 0;
-}
-
-/* History Grid Adjustments */
-.history-grid {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 2rem;
-    padding: 1.5rem 2rem;
-    margin: 2rem 0;
-    background: rgba(230, 0, 18, 0.03);
-    border-radius: 8px;
-}
-
-.history-image {
-    width: 100%;
-    max-width: 280px;
-    border: 3px solid var(--nes-red);
-    padding: 0.5rem;
-    align-self: start;
-    box-shadow: 8px 8px 0 var(--nes-gray);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    body {
-        padding: 2rem;
-    }
-    
-    .container {
-        padding: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 1.5rem;
-    }
-    
-    .history-grid {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-    
-    .history-image {
-        max-width: 1080px;
-        margin: 1rem auto;
-    }
-    
-    .global-header,
-    .global-footer {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width: 1080px) {
-    body {
-        padding: 1rem;
-    }
-    
-    .container {
-        padding: 1rem;
-    }
-}
 /* Contact Page Specific Styles */
 .contact-section {
     max-width: 1200px;
@@ -120,7 +31,7 @@ section {
 
 .contact-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
     gap: 3rem;
     margin-top: 2rem;
 }
@@ -206,7 +117,7 @@ section {
 /* Contact Gallery */
 .contact-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 1rem;
     margin: 2rem 0;
 }
@@ -223,6 +134,16 @@ section {
 @media (max-width: 768px) {
     .contact-gallery {
         grid-template-columns: 1fr 1fr;
+    }
+    
+    .gallery-item {
+        height: 150px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
     
     .gallery-item {

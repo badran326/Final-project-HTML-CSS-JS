@@ -5,20 +5,21 @@ const mainFooter = document.querySelector('#footer-section');
 
 // include header
 mainHeader.innerHTML = `
-<div class="header">
-<img class="logo" src="img/logo4.png">
-<h1>My Website</h1>
-<p>A <b>responsive</b> website created by me.</p>
-</div>
-
-<nav class="navbar">
-<a href="Home.html" class="active"><img src="img/home-icon1.png" ></a>
-<a href="about-us.html">About</a>
-<a href="products.html">Products</a>
-<a href="services.html">Srvices</a>
-<a href="#">Contact Us</a>
-<a href="#" class="right"><img src="img/shopping-cart-icon.png" ></a>
-</nav>
+<nav>
+        <a href="/html/index.html" class="logo">
+          <img
+            src="/img/Nintendo.svg.png"
+            alt="NES Logo"
+            class="logo-img"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="/html/index.html">Home</a>
+          <a href="/html/AboutUs.html">About</a>
+          <a href="/html/products.html">Games</a>
+          <a href="/html/ContactUs.html">Contact</a>
+        </div>
+      </nav>
 `;
 
 // include footer
@@ -30,24 +31,19 @@ mainHeader.innerHTML = `
 
 
 mainFooter.innerHTML = `
-<footer class="footer-distributed">
-
-      <div class="footer-left">
+<div class="footer-left">
 
       <img class="logo" src="/img/NES-Console-logo.png" alt="">
 
         <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
           
-          <a href="#">Blog</a>
-        
-          <a href="#">Pricing</a>
-        
-          <a href="#">About</a>
+          <a href="/html/index.html"  class="link-1">Home</a>
+
+          <a href="/html/AboutUs.html">About</a>
+
+          <a href="/html/products.html">Games</a>
           
-          <a href="#">Faq</a>
-          
-          <a href="#">Contact</a>
+          <a href="/html/ContactUs.html">Contact</a>
         </p>
 
         <p class="footer-company-name">Company Name © 2015</p>
@@ -87,10 +83,7 @@ mainFooter.innerHTML = `
           <a href="#" class="fa fa-github"></a>
 
         </div>
-
       </div>
-
-    </footer>
 `;
 
 let index = 0;
