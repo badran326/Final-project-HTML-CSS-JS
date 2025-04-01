@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (min-width: 730px) {
 /* Header Styles */
 header {
   background-color: #e60012;
@@ -17,11 +18,14 @@ header {
 }
 
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  justify-self: center;
+  width: fit-content;
   margin: 0 auto;
+  width: 100%;
 }
 
 .logo {
@@ -31,6 +35,8 @@ nav {
   text-decoration: none;
   font-family: "Press Start 2P", cursive;
   display: flex;
+  width: fit-content;
+  justify-self: center;
   align-items: center;
 }
 
@@ -52,9 +58,76 @@ nav {
   font-weight: 500;
 }
 
+.nav-links {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  justify-self: center;
+}
+
 .nav-links a:hover {
   opacity: 0.8;
 }
+
+.button-links {
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 730px) {
+
+  header {
+    background-color: #e60012;
+    padding: 1rem 2rem;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links{   
+    display: none;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .button-links {
+    display: flex;
+    width: 8%;
+    justify-self: end;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: opacity 0.3s;
+    font-weight: 500;
+  }
+
+}
+
 /* Header Styles */
 
 
@@ -71,6 +144,16 @@ nav {
   align-items: center;
 }
 
+.footer-distributed{
+  background: #0d0c0c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: fit-content;
+  font: bold 16px sans-serif;
+  padding: 35px 10px;
+  justify-self: center;
+}
+
 @media screen and (max-width: 400px) {
     #footer-partners{   
       flex-direction: column;
@@ -81,7 +164,7 @@ nav {
   background: #0d0c0c;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  width: 100%;
+  width: fit-content;
   text-align: left;
   font: bold 16px sans-serif;
   padding: 35px 10px;
@@ -92,12 +175,13 @@ nav {
 .footer-distributed .footer-right{
   display: inline-block;
   vertical-align: top;
+  padding: 16px;
 }
 
 /* Footer left */
 
 .footer-distributed .footer-left{
-  width: 40%;
+  width: 100%;
 }
 
 /* The company logo */
@@ -138,7 +222,7 @@ nav {
 /* Footer Center */
 
 .footer-distributed .footer-center{
-  width: 35%;
+  width: 100%;
 }
 
 .footer-distributed .footer-center i{
@@ -196,7 +280,7 @@ nav {
 /* Footer Right */
 
 .footer-distributed .footer-right{
-  width: 20%;
+  width: 100%;
 }
 
 .footer-distributed .footer-company-about{
@@ -239,10 +323,11 @@ nav {
 }
 
 /* Footer */
-.footer {
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   text-align: center;
-  background: #dd2020;
 }
 
 footer .logo {
