@@ -36,17 +36,14 @@ mainFooter.innerHTML = `
       <img class="logo" src="/img/NES-Console-logo.png" alt="">
 
         <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
           
-          <a href="#">Blog</a>
-        
-          <a href="#">Pricing</a>
-        
-          <a href="#">About</a>
+          <a href="/html/index.html"  class="link-1">Home</a>
+
+          <a href="/html/AboutUs.html">About</a>
+
+          <a href="/html/products.html">Games</a>
           
-          <a href="#">Faq</a>
-          
-          <a href="#">Contact</a>
+          <a href="/html/ContactUs.html">Contact</a>
         </p>
 
         <p class="footer-company-name">Company Name © 2015</p>
