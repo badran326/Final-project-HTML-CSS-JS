@@ -1,4 +1,8 @@
-  /* Main column */
+body{
+  object-fit: cover;
+  background-image: url(/img/bg-black-dots.avif);
+}
+/* Main column */
   main {
     padding-top: 70px;
     justify-items: center;
@@ -45,8 +49,6 @@
   .games {
     color: #dd2020;
     padding: 16px;
-    width: 100%;
-    background-image: url(/img/bg-black-dots.avif);
     justify-self: center;
     justify-items: center;
 }

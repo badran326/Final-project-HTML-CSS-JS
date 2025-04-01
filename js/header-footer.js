@@ -13,14 +13,37 @@ mainHeader.innerHTML = `
             class="logo-img"
           />
         </a>
-        <div class="nav-links">
+        <div id="nav-links" class="nav-links">
           <a href="/html/index.html">Home</a>
           <a href="/html/AboutUs.html">About</a>
           <a href="/html/products.html">Games</a>
           <a href="/html/ContactUs.html">Contact</a>
         </div>
+        <img id="button-links" class="button-links" src="/img/menu-button.1024x1024.png" alt="button-links">
       </nav>
 `;
+
+const buttonLinks = document.getElementById("button-links");
+const nav = document.getElementById("nav-links");
+const header = document.getElementById("main-header");
+
+buttonLinks.onclick = function () {
+    if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "grid";
+        header.style.height = "250px";
+    } else {
+        nav.style.display = "none";
+        header.style.height = "70px";
+    }
+};
+
+// Listen for window resize and reset styles
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 730) {
+        nav.style.display = ""; // Reset to CSS default
+        header.style.height = "70px"; // Ensure header height is normal
+    }
+});
 
 // include footer
 // mainFooter.innerHTML = `
