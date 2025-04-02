@@ -6,20 +6,20 @@ const mainFooter = document.querySelector('#footer-section');
 // include header
 mainHeader.innerHTML = `
 <nav>
-        <a href="./index.html" class="logo">
+        <a href="../../Final Projact/index.html" class="logo">
           <img
-            src="./img/Nintendo.svg.png"
+            src="../../Final Projact/img/Nintendo.svg.png"
             alt="NES Logo"
             class="logo-img"
           />
         </a>
         <div id="nav-links" class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./html/AboutUs.html">About</a>
-          <a href="./html/products.html">Games</a>
-          <a href="./html/ContactUs.html">Contact</a>
+          <a href="../../Final Projact/index.html">Home</a>
+          <a href="../../Final Projact/html/AboutUs.html">About</a>
+          <a href="../../Final Projact/html/products.html">Games</a>
+          <a href="../../Final Projact/html/ContactUs.html">Contact</a>
         </div>
-        <img id="button-links" class="button-links" src="../img/menu-button.1024x1024.png" alt="button-links">
+        <img id="button-links" class="button-links" src="../../Final Projact/img/menu-button.1024x1024.png" alt="button-links">
       </nav>
 `;
 
@@ -56,17 +56,17 @@ window.addEventListener("resize", function () {
 mainFooter.innerHTML = `
 <div class="footer-left">
 
-      <img class="logo" src="../img/NES-Console-logo.png" alt="">
+      <img class="logo" src="../../Final Projact/img/NES-Console-logo.png" alt="">
 
         <p class="footer-links">
           
-          <a href="./index.html"  class="link-1">Home</a>
+          <a href="../../Final Projact/index.html"  class="link-1">Home</a>
 
-          <a href="./html/AboutUs.html">About</a>
+          <a href="../../Final Projact/html/AboutUs.html">About</a>
 
-          <a href="./html/products.html">Games</a>
+          <a href="../../Final Projact/html/products.html">Games</a>
           
-          <a href="./html/ContactUs.html">Contact</a>
+          <a href="../../Final Projact/html/ContactUs.html">Contact</a>
         </p>
 
         <p class="footer-company-name">Company Name © 2015</p>
