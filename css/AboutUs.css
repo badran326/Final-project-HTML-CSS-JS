@@ -5,6 +5,24 @@
     --nes-gray: #7B7B7B;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 8%;
+}
+
+/* Section Spacing */
+section {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    justify-items: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -13,19 +31,40 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url(../../Final-project-HTML-CSS-JS/img/bg-decoration.jpeg);
+}
+
+.hero {
+    background-color: #ff000000;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.hero-image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero-image img {
+    background-color: #ffffff;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+      
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 3rem; /* Inner container padding */
     flex: 1;
 }
 
-/* Section Spacing */
-section {
-    padding: 2rem 0;
-    margin: 2rem 0;
+.innovation-text {
+    margin-bottom: 5%;
 }
 
 /* History Grid Adjustments */
@@ -34,9 +73,13 @@ section {
     grid-template-columns: 1fr 300px;
     gap: 2rem;
     padding: 1.5rem 2rem;
-    margin: 2rem 0;
+    margin:0rem 5rem;
     background: rgba(230, 0, 18, 0.03);
     border-radius: 8px;
+}
+
+.history-text p {
+    margin-top: 5%;
 }
 
 .history-image {
@@ -46,6 +89,25 @@ section {
     padding: 0.5rem;
     align-self: start;
     box-shadow: 8px 8px 0 var(--nes-gray);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 40%;
+    border-radius: 16px;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nes-era {
+    background-color: #ffffff00;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 /* Responsive Adjustments */

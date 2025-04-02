@@ -69,7 +69,7 @@ mainFooter.innerHTML = `
           <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.html">Contact</a>
         </p>
 
-        <p class="footer-company-name">Company Name © 2015</p>
+        <p class="footer-company-name">Nintendo © 1981</p>
       </div>
 
       <div class="footer-center">
@@ -95,7 +95,13 @@ mainFooter.innerHTML = `
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          <h4>NES Global Expansion (1985)</h4>
+          <p>Redesigned for Western markets featuring:</p>
+          <ul>
+              <li>10NES lockout chip for quality control</li>
+              <li>"Game Pak" cartridges instead of "video games"</li>
+              <li>ROB the robot bundled in North America</li>
+          </ul>
         </p>
 
         <div class="footer-icons">
