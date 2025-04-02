@@ -28,21 +28,21 @@ const nav = document.getElementById("nav-links");
 const header = document.getElementById("main-header");
 
 buttonLinks.onclick = function () {
-    if (nav.style.display === "none" || nav.style.display === "") {
-        nav.style.display = "grid";
-        header.style.height = "250px";
-    } else {
-        nav.style.display = "none";
-        header.style.height = "70px";
-    }
+  if (nav.style.display === "none" || nav.style.display === "") {
+    nav.style.display = "grid";
+    header.style.height = "250px";
+  } else {
+    nav.style.display = "none";
+    header.style.height = "70px";
+  }
 };
 
 // Listen for window resize and reset styles
 window.addEventListener("resize", function () {
-    if (window.innerWidth > 730) {
-        nav.style.display = ""; // Reset to CSS default
-        header.style.height = "70px"; // Ensure header height is normal
-    }
+  if (window.innerWidth > 730) {
+    nav.style.display = ""; // Reset to CSS default
+    header.style.height = "70px"; // Ensure header height is normal
+  }
 });
 
 // include footer
@@ -76,12 +76,12 @@ mainFooter.innerHTML = `
 
         <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          <p><span>11-1 Hokotate-cho</span> Kamitoba, Minami-ku, Kyoto, Japan</p>
         </div>
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p>+1-800-255-3700</p>
         </div>
 
         <div>
@@ -100,8 +100,8 @@ mainFooter.innerHTML = `
 
         <div class="footer-icons">
 
-          <a href="#" id="fa-facebook" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/NintendoAmerica/" id="fa-facebook" class="fa fa-facebook"></a>
+          <a href="https://x.com/NintendoAmerica" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-linkedin"></a>
           <a href="#" class="fa fa-github"></a>
 
