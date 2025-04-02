@@ -6,7 +6,7 @@ const mainFooter = document.querySelector('#footer-section');
 // include header
 mainHeader.innerHTML = `
 <nav>
-        <a href="/html/index.html" class="logo">
+        <a href="/index.html" class="logo">
           <img
             src="/img/Nintendo.svg.png"
             alt="NES Logo"
@@ -14,7 +14,7 @@ mainHeader.innerHTML = `
           />
         </a>
         <div id="nav-links" class="nav-links">
-          <a href="/html/index.html">Home</a>
+          <a href="/index.html">Home</a>
           <a href="/html/AboutUs.html">About</a>
           <a href="/html/products.html">Games</a>
           <a href="/html/ContactUs.html">Contact</a>
@@ -60,7 +60,7 @@ mainFooter.innerHTML = `
 
         <p class="footer-links">
           
-          <a href="/html/index.html"  class="link-1">Home</a>
+          <a href="/index.html"  class="link-1">Home</a>
 
           <a href="/html/AboutUs.html">About</a>
 
