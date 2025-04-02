@@ -76,12 +76,12 @@ mainFooter.innerHTML = `
 
         <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          <p><span>11-1 Hokotate-cho</span> Kamitoba, Minami-ku, Kyoto, Japan</p>
         </div>
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p>+1-800-255-3700</p>
         </div>
 
         <div>
@@ -100,8 +100,8 @@ mainFooter.innerHTML = `
 
         <div class="footer-icons">
 
-          <a href="#" id="fa-facebook" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/NintendoAmerica/" id="fa-facebook" class="fa fa-facebook"></a>
+          <a href="https://x.com/NintendoAmerica" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-linkedin"></a>
           <a href="#" class="fa fa-github"></a>
 
