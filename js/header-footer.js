@@ -6,18 +6,18 @@ const mainFooter = document.querySelector('#footer-section');
 // include header
 mainHeader.innerHTML = `
 <nav>
-        <a href="../index.html" class="logo">
+        <a href="./index.html" class="logo">
           <img
-            src="../img/Nintendo.svg.png"
+            src="./img/Nintendo.svg.png"
             alt="NES Logo"
             class="logo-img"
           />
         </a>
         <div id="nav-links" class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="../html/AboutUs.html">About</a>
-          <a href="../html/products.html">Games</a>
-          <a href="../html/ContactUs.html">Contact</a>
+          <a href="./index.html">Home</a>
+          <a href="./html/AboutUs.html">About</a>
+          <a href="./html/products.html">Games</a>
+          <a href="./html/ContactUs.html">Contact</a>
         </div>
         <img id="button-links" class="button-links" src="../img/menu-button.1024x1024.png" alt="button-links">
       </nav>
@@ -60,13 +60,13 @@ mainFooter.innerHTML = `
 
         <p class="footer-links">
           
-          <a href="../index.html"  class="link-1">Home</a>
+          <a href="./index.html"  class="link-1">Home</a>
 
-          <a href="../html/AboutUs.html">About</a>
+          <a href="./html/AboutUs.html">About</a>
 
-          <a href="../html/products.html">Games</a>
+          <a href="./html/products.html">Games</a>
           
-          <a href="../html/ContactUs.html">Contact</a>
+          <a href="./html/ContactUs.html">Contact</a>
         </p>
 
         <p class="footer-company-name">Company Name © 2015</p>
