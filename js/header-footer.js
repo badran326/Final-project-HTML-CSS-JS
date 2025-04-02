@@ -28,21 +28,21 @@ const nav = document.getElementById("nav-links");
 const header = document.getElementById("main-header");
 
 buttonLinks.onclick = function () {
-    if (nav.style.display === "none" || nav.style.display === "") {
-        nav.style.display = "grid";
-        header.style.height = "250px";
-    } else {
-        nav.style.display = "none";
-        header.style.height = "70px";
-    }
+  if (nav.style.display === "none" || nav.style.display === "") {
+    nav.style.display = "grid";
+    header.style.height = "250px";
+  } else {
+    nav.style.display = "none";
+    header.style.height = "70px";
+  }
 };
 
 // Listen for window resize and reset styles
 window.addEventListener("resize", function () {
-    if (window.innerWidth > 730) {
-        nav.style.display = ""; // Reset to CSS default
-        header.style.height = "70px"; // Ensure header height is normal
-    }
+  if (window.innerWidth > 730) {
+    nav.style.display = ""; // Reset to CSS default
+    header.style.height = "70px"; // Ensure header height is normal
+  }
 });
 
 // include footer
