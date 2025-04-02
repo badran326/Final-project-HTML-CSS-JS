@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/img/photo-1593305841991-05c297ba4575.avif");
+    url("./img/photo-1593305841991-05c297ba4575.avif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
