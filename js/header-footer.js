@@ -15,9 +15,9 @@ mainHeader.innerHTML = `
         </a>
         <div id="nav-links" class="nav-links">
           <a href="../../Final-project-HTML-CSS-JS/index.html">Home</a>
-          <a href="../../Final-project-HTML-CSS-JS/html/AboutUs.html">About</a>
+          <a href="../../Final-project-HTML-CSS-JS/html/AboutUs.Html">About</a>
           <a href="../../Final-project-HTML-CSS-JS/html/products.html">Games</a>
-          <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.html">Contact</a>
+          <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.Html">Contact</a>
         </div>
         <img id="button-links" class="button-links" src="../../Final-project-HTML-CSS-JS/img/menu-button.1024x1024.png" alt="button-links">
       </nav>
@@ -62,11 +62,11 @@ mainFooter.innerHTML = `
           
           <a href="../../Final-project-HTML-CSS-JS/index.html"  class="link-1">Home</a>
 
-          <a href="../../Final-project-HTML-CSS-JS/html/AboutUs.html">About</a>
+          <a href="../../Final-project-HTML-CSS-JS/html/AboutUs.Html">About</a>
 
           <a href="../../Final-project-HTML-CSS-JS/html/products.html">Games</a>
           
-          <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.html">Contact</a>
+          <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.Html">Contact</a>
         </p>
 
         <p class="footer-company-name">Company Name © 2015</p>
