@@ -6,20 +6,20 @@ const mainFooter = document.querySelector('#footer-section');
 // include header
 mainHeader.innerHTML = `
 <nav>
-        <a href="../../Final-project-HTML-CSS-JS/index.html" class="logo">
+        <a href="../index.html" class="logo">
           <img
-            src="../../Final-project-HTML-CSS-JS/img/Nintendo.svg.png"
+            src="../img/Nintendo.svg.png"
             alt="NES Logo"
             class="logo-img"
           />
         </a>
         <div id="nav-links" class="nav-links">
-          <a href="../../Final-project-HTML-CSS-JS/index.html">Home</a>
-          <a href="../../Final-project-HTML-CSS-JS/html/AboutUs.html">About</a>
-          <a href="../../Final-project-HTML-CSS-JS/html/products.html">Games</a>
-          <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.html">Contact</a>
+          <a href="../index.html">Home</a>
+          <a href="../html/AboutUs.html">About</a>
+          <a href="../html/products.html">Games</a>
+          <a href="../html/ContactUs.html">Contact</a>
         </div>
-        <img id="button-links" class="button-links" src="../../Final-project-HTML-CSS-JS/img/menu-button.1024x1024.png" alt="button-links">
+        <img id="button-links" class="button-links" src="../img/menu-button.1024x1024.png" alt="button-links">
       </nav>
 `;
 
@@ -56,17 +56,17 @@ window.addEventListener("resize", function () {
 mainFooter.innerHTML = `
 <div class="footer-left">
 
-      <img class="logo" src="../../Final-project-HTML-CSS-JS/img/NES-Console-logo.png" alt="">
+      <img class="logo" src="../img/NES-Console-logo.png" alt="">
 
         <p class="footer-links">
           
-          <a href="../../Final-project-HTML-CSS-JS/index.html"  class="link-1">Home</a>
+          <a href="../index.html"  class="link-1">Home</a>
 
-          <a href="../../Final-project-HTML-CSS-JS/html/AboutUs.html">About</a>
+          <a href="../html/AboutUs.html">About</a>
 
-          <a href="../../Final-project-HTML-CSS-JS/html/products.html">Games</a>
+          <a href="../html/products.html">Games</a>
           
-          <a href="../../Final-project-HTML-CSS-JS/html/ContactUs.html">Contact</a>
+          <a href="../html/ContactUs.html">Contact</a>
         </p>
 
         <p class="footer-company-name">Company Name © 2015</p>
